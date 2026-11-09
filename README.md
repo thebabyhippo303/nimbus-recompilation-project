@@ -2,35 +2,36 @@
 
 **TNRP** (The Nimbus Recompilation Project, formerly The Nimbus Project) is a free fan project by Animorph Allocations.
 
-Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), Supersonic Warriors and Taiketsu (USA Game Boy Advance), and Tenkaichi Tag Team (USA PSP, ULUS10537) — six games in one launcher on Linux, Windows and Android, with online play and full 3-platform crossplay across 16 global server instances.
+Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), Supersonic Warriors and Taiketsu (USA Game Boy Advance), Tenkaichi Tag Team, Shin Budokai and Shin Budokai – Another Road (USA PSP), and Infinite World (USA PlayStation 2, SLUS-21842) — nine games in one launcher on Linux, Windows and Android (four consoles: GameCube, GBA, PSP and PS2), with online play and full 3-platform crossplay across 16 global server instances.
 
 **Official website:** [nimbusrecomp.org](https://nimbusrecomp.org/)
 
 This repository holds the finished release distros only. Grab them from [Releases](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases).
 
-## Current version: Alpha 1.6 (Nov 6, 2026)
+## Current version: Alpha 1.8 (Nov 8, 2026)
 
 | Platform | File | SHA-256 |
 |---|---|---|
-| Linux x86_64 (Ubuntu 26.04) | [`Nimbus-Alpha-1.6-Linux-x86_64.run`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Linux-x86_64.run) | `1cd7414d4c091e77f4dfb6618144ecadcfb64b681623236f386d66e1bae01ab6` |
-| Windows x64 (Windows 11, Vulkan or D3D12 GPU) | [`Nimbus-Alpha-1.6-Windows-x64.zip`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Windows-x64.zip) | `f0c5437f2a17dffc6d5c0dae0794cd0bb223c84bc630c1f7c9d9fb53b1a84bab` |
-| Android arm64 (Android 13+) | [`Nimbus-Alpha-1.6-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.6/Nimbus-Alpha-1.6-Android-arm64.apk) | `7dfba5a6cc204029881218048feab7ca4ffc1f989adb0a8578cd3688a8dc62cd` |
+| Linux x86_64 (Ubuntu 26.04) | [`Nimbus-Alpha-1.8-Linux-x86_64.run`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.8/Nimbus-Alpha-1.8-Linux-x86_64.run) | `dfc81ea01a0826ebd410abb9b116825a7aa1e4454933f3b5e30e63325c21f2bb` |
+| Windows x64 (Windows 11, Vulkan or D3D12 GPU) | [`Nimbus-Alpha-1.8-Windows-x64.zip`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.8/Nimbus-Alpha-1.8-Windows-x64.zip) | `ddac9a290290ef8945d13a72676a82490b060a42246fa0f8bc4dba7742a3d6a4` |
+| Android arm64 (Android 13+) | [`Nimbus-Alpha-1.8-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-1.8/Nimbus-Alpha-1.8-Android-arm64.apk) | `40a070969eb9d85ddf1642ee5836eb5718bfb11cd70480eb25c8c9f108e2a09a` |
 
-Also mirrored on the CDN: [R2 builds/alpha-1.6](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-1.6/SHA256SUMS).
+Also mirrored on the CDN: [R2 builds/alpha-1.8](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-1.8/).
 
-Check your download against `SHA256SUMS` (`sha256sum -c SHA256SUMS`). Release notes: [Alpha 1.6](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.6). HD texture packs (including Tenkaichi Tag Team, Taiketsu and Supersonic Warriors) are on the [website](https://nimbusrecomp.org/#downloads). Separate module downloads (host, renderer and game cores) are on the [website](https://nimbusrecomp.org/#modules).
+Check your download against `SHA256SUMS` (`sha256sum -c SHA256SUMS`). Release notes: [Alpha 1.8](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.8). HD texture packs (including Infinite World and earlier games) are on the [website](https://nimbusrecomp.org/#downloads). Separate module downloads (host, renderer and game cores) are on the [website](https://nimbusrecomp.org/#modules).
 
-Previous releases: [Alpha 1.5](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.5) (Nov 5, 2026) · [Alpha 1.4](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.4) (Nov 3, 2026) · [Alpha 1.3](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.3) (Nov 2, 2026) · [Alpha 1.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.2) (Nov 2, 2026) · [Alpha 1.1](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.1) (Nov 2, 2026) · [Alpha 1.0](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.0) (Nov 1, 2026).
+**Known issue:** Infinite World has an FPS bug when using standard textures. Use the Infinite World texture packs on the [website](https://nimbusrecomp.org/#downloads) as the workaround.
 
-You need your own NTSC-U discs, your own Supersonic Warriors (USA) and Taiketsu (USA) ROMs, and your own Tenkaichi Tag Team (USA, ULUS10537) ISO or CSO. The runtime components for all six games are bundled; no original disc images, ROMs or ISOs are included.
+Previous releases: [Alpha 1.7](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.7) (Nov 7, 2026) · [Alpha 1.6](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.6) (Nov 6, 2026) · [Alpha 1.5](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.5) (Nov 5, 2026) · [Alpha 1.4](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.4) (Nov 3, 2026) · [Alpha 1.3](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.3) (Nov 2, 2026) · [Alpha 1.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.2) (Nov 2, 2026) · [Alpha 1.1](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.1) (Nov 2, 2026) · [Alpha 1.0](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.0) (Nov 1, 2026).
 
-## What's new in Alpha 1.6
+You need your own NTSC-U discs, your own Supersonic Warriors (USA) and Taiketsu (USA) ROMs, your own Tenkaichi Tag Team (USA, ULUS10537), Shin Budokai (USA, ULUS10081) and Shin Budokai – Another Road (USA, ULUS10234) ISO, CSO or ZSO, and your own Infinite World (USA, SLUS-21842) disc image. The runtime components for all nine games are bundled; no original disc images, ROMs or ISOs are included.
 
-- **Dragon Ball Z: Budokai Tenkaichi Tag Team** (PSP, ULUS10537) joins as a native recompilation — the sixth game — with 1v1 and 4-player 2v2 Tag Team online & local multiplayer, Quick Match, live Classic ↔ Remastered toggle, up to 6× internal scale, cel/ink outlines, enhanced shadows, and HD texture packs (PC 4× / 3× / 2× + Android). 60 fps support and further refinements are coming soon.
-- **Friends, Party & Voice Chat** built into the launcher, plus an **Android Touch Control Overhaul** across all six games.
-- **16 global server instances + Online Lobby** across five regions (Americas, Europe, Middle East & Africa, Asia-Pacific).
-- Full **3-platform crossplay** (Linux · Windows · Android).
-- **Next up (Alpha 1.7):** Dragon Ball Z: Shin Budokai – Another Road.
+## What's new in Alpha 1.8
+
+- **Dragon Ball Z: Infinite World** (PlayStation 2, SLUS-21842) joins as a native recompilation — the ninth game — and PS2 is the fourth console, on Linux, Windows and Android, with HD texture packs and general optimizations.
+- **Known issue:** Infinite World has an FPS bug when using standard textures. Use the Infinite World texture packs on the website as the workaround.
+- Full **3-platform crossplay** (Linux · Windows · Android) across the nine-game launcher.
+- **Next up (Alpha 1.9):** Super Dragon Ball Z — coming soon only.
 
 ## How TNRP works
 
