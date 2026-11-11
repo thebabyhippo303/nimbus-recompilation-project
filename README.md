@@ -12,9 +12,9 @@ This repository holds the finished release distros only. Grab them from [Release
 
 | Platform | File | SHA-256 |
 |---|---|---|
-| Linux x86_64 (Ubuntu 26.04, Vulkan GPU) | [`Nimbus-Alpha-2.0-Linux-x86_64.run`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.0/Nimbus-Alpha-2.0-Linux-x86_64.run) | `__SHA256_LINUX__` |
-| Windows x64 (Windows 11, Vulkan GPU) | [`Nimbus-Alpha-2.0-Windows-x64.zip`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.0/Nimbus-Alpha-2.0-Windows-x64.zip) | `__SHA256_WINDOWS__` |
-| Android arm64 (Android 13+, Vulkan GPU) | [`Nimbus-Alpha-2.0-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.0/Nimbus-Alpha-2.0-Android-arm64.apk) | `__SHA256_ANDROID__` |
+| Linux x86_64 (Ubuntu 26.04, Vulkan GPU) | [`Nimbus-Alpha-2.0-Linux-x86_64.run`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.0/Nimbus-Alpha-2.0-Linux-x86_64.run) | `ad6d3a53641ed18f6b3ad62ec0074719890b8effb6c1751c474e1254d43fd0df` |
+| Windows x64 (Windows 11, Vulkan GPU) | [`Nimbus-Alpha-2.0-Windows-x64.zip`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.0/Nimbus-Alpha-2.0-Windows-x64.zip) | `5e9b98b60367dac24590d3fd4392567c7e52ff2fb195f1a95761e9f675133186` |
+| Android arm64 (Android 13+, Vulkan GPU) | [`Nimbus-Alpha-2.0-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.0/Nimbus-Alpha-2.0-Android-arm64.apk) | `f48a3ca7164a72b45dc7a8b7fd80220672a70e644fe8b49d717762bb7ac8d6a1` |
 
 Also mirrored on the CDN: [R2 builds/alpha-2.0](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.0/).
 
