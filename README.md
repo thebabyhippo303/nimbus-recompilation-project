@@ -8,7 +8,7 @@ Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), S
 
 This repository holds the finished release distros only. Grab them from [Releases](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases).
 
-## Current version: Alpha 2.2 (Nov 17, 2026)
+## Current version: Alpha 2.2.1 (Nov 17, 2026) — hotfix for Linux and Windows; Android remains on the Alpha 2.2 build.
 
 | Platform | File | SHA-256 |
 |---|---|---|
