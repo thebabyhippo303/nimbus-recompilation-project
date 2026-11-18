@@ -49,7 +49,7 @@ Bring your own legally dumped games. No copyrighted game files are included.
 
 ## How TNRP works
 
-TNRP runs on a hybrid core that sits between recompilation and decompilation. Each game has its own native core, running on a shared Nimbus host and renderer. There's no emulator and no interpreter emulating the hardware. Every game can be played in Original or Remastered mode. Detailed architecture notes will be posted on the website later.
+TNRP runs on a hybrid core that sits between recompilation and decompilation. Each game has its own native core, running on a shared Nimbus host and renderer. There's no emulator and no interpreter emulating the hardware. Every game can be played in Original or Remastered mode. See the [architecture flow](#architecture-flow-from-disc-to-player) below.
 
 **We don't pretend to be the hardware.**
 
@@ -59,308 +59,41 @@ The Nimbus Recompilation Project is closed source for now, while server hosting,
 
 
 
-https://nimbusrecomp.org/architecture-notes
----------------------------------------------------
-The Nimbus Recompilation Project · Nimbus Alpha 2.2 · architecture notes
-TNRP master map: from disc to player
+## Architecture flow: from disc to player
 
-This is the public cut of our internal map. It shows every layer and how they connect. Tool names, methods and infrastructure details are left off.
-14
-game cores
-4
-console families
-4
-hosts
-1
-Vulkan-only renderer
-3
-platforms
-13
-releases, 1.0 → 2.2
-16
-netplay relays
-Before 1.0
-October
-GameCube groundwork: the first game, the renderer, the host
-Alpha 1.0
-Nov 1
-Budokai · Budokai 2 · Sagas
-1.1
-Nov 2
-Android touch controls
-1.2
-Nov 2
-Quick Match to character select
-1.3
-Nov 2
-European servers
-1.4
-Nov 3
-Supersonic Warriors
-1.5
-Nov 5
-Taiketsu
-1.6
-Nov 6
-Tenkaichi Tag Team
-1.7
-Nov 7
-Shin Budokai · Another Road
-1.8
-Nov 8
-Infinite World
-1.9
-Nov 9
-Super Dragon Ball Z
-Alpha 2.0
-Nov 11
-Ridge Racer 2
-Alpha 2.1
-Nov 14
-Budokai Tenkaichi 3
-Alpha 2.2
-Nov 17
-Ultimate Ninja 5 · Gundam vs. Gundam NEXT PLUS
-The map
+Read top to bottom. GameCube, Game Boy Advance, PSP, and PlayStation 2 each have their own intake and runtime work. Their paths join at the Nimbus host layer.
 
-Read top to bottom, 01 to 10. Columns are lanes: the upscale lane on the left, one lane per console family, and the fleet, records and backups on the right. From row 06 down the console lanes merge, because every game runs on a console host plus the one shared renderer.
-Upscale lane
-textures → HD packs
-GameCube
-3 games
-Game Boy Advance
-2 games
-PSP
-5 games
-PlayStation 2
-4 games
-Fleet · records · backups
-where the work happens and is kept
-01
-Sources
-what goes in
-Texture sources
-Game art decoded from discs we own, per file format family.
-GameCube disc image
-Program and file table, read only.
-GBA ROM dump
-Identified by its header id.
-UMD image
-Program module plus the disc's data files.
-PS2 disc image
-Boot program, modules and archives.
-Orchestration
-One laptop drives every lane and every machine.
-02
-Intake & RE
-reverse engineering per console
-Decode per family
-Each texture format gets its own decoder and key scheme.
-Boundaries & names
-Functions, data and library code are separated and labelled.
-Lift
-Machine code to portable source. Hand-matched code where exactness demands it.
-Reference & coverage
-What the program does is recorded and measured before it is lifted.
-Discover & recompile
-Code reached at run time is found ahead of time.
-Executable intake
-The program module is identified and verified.
-Lift & system map
-Every system call the game makes is mapped to a native service.
-Decode & link
-Boot program and overlays resolved into one image.
-Lift & vector units
-Main program and vector-unit programs, both ahead of time.
-Build machine
-Compiles cores, hosts and reference runs.
-03
-Codegen & runtimes
-tree passes · per-console runtime
-Model runner
-Upscaling models chosen per game and per texture class.
-Codegen chain
-A fixed series of passes from lifted code to buildable source.
-CPU runtime
-The small native layer lifted code calls into.
-Split units
-Generated source cut into parallel build units.
-CPU & console runtime
-Handheld services answered natively.
-Split units
-Dozens of build units per game.
-CPU runtime + system services
-Threads, files, audio and save data as native code.
-Lifter contract
-A versioned agreement between generated code and runtime.
-CPU runtime + system services
-Kernel calls, sound and memory cards as native code.
-Compute & upscale
-A desktop GPU box for heavy builds, packs and Windows runs.
-04
-Compile
-link-time, profile-guided and post-link optimisation
-Tiers & encodes
-2x, 3x and 4x on PC; lite and full on Android.
-BC7
-ASTC
-mip chains
-GameCube
-Trained on recorded play, then laid out again after linking.
-GBA
-Native per platform.
-PSP
-Profile per game; one build per platform.
-PS2
-Profile per game; device-sampled layout on Android.
-Vault & test PC
-Holds every shipped build and source snapshot.
-05
-The 14 game cores
-one native core per game
-HD packs per game
-Optional. Built from each game's 4x master.
-Budokai
-Budokai 2
-Sagas
-Supersonic Warriors
-Taiketsu
-Tenkaichi Tag Team
-Shin Budokai · Another Road
-Shin Budokai
-Ridge Racer 2
-Gundam vs. Gundam NEXT PLUS
-new in 2.2
-Infinite World
-Super Dragon Ball Z
-Budokai Tenkaichi 3
-Ultimate Ninja 5
-new in 2.2
-Handheld & phone QA
-Retroid Pocket 5, RG Slide, a Pixel. Real devices, real fights.
-06
-Nimbus host
-one host per console · shared services
-Pack loaders
-Compressed packs go to graphics memory whole, before play.
-GameCube host
-GX front end
-GBA host
-Tile-layer front end
-PSP host
-GE front end
-PS2 host
-GS front end
-Records
-Every run that backs a claim is kept: digests, frame times, device logs.
-Work journals
-Each lane hands off in writing.
-Core loader
-One contract for all 14 cores.
-Launcher
-Library, file linking, friends, party.
-Renderer · Vulkan only
-The same renderer code for every game.
-Netplay
-Rooms, input sync, mid-session repair.
-Audio
-Each console's sound path, native.
-Input
-Pads, keyboard, touch layouts.
-Saves & states
-Your save, a provided save, save states.
-Platform layers
-Linux, Windows, Android glue.
-07
-Package & sign
-frozen tree → gated builds → 3 platforms
-Publish packs
-Sealed, hashed, one zip per tier.
-Linux x86-64
-One self-contained file.
-.run
-Windows x64
-One archive.
-.zip
-Android arm64
-Signed, updates in place.
-.apk
-Release tickets
-Every shipped component is signed and checked at load.
-Backups
-Source snapshots and shipped builds, on site and off.
-08
-Distribute
-builds and packs travel separately
-Release downloads
-The three packages per version.
-Project site
-Notes, benchmarks, older alphas.
-Pack storage
-HD packs as optional downloads.
-09
-Online
-lobby · 16 relays · stats
-Lobby
-Rooms, codes, parties, matchmaking.
-Relay mesh · 16 nodes
-Regional; a session picks the closest.
-Direct path
-Peer to peer when the network allows; relay as fallback.
-Stats
-Anonymous service health only.
-10
-Players
-three platforms, cross-play between them
-Linux x86-64
-Desktops, laptops, handheld PCs.
-Windows x64
-Desktop GPUs with Vulkan.
-Android arm64
-Handhelds and phones.
-The player's own games
-You link your own legally acquired disc image or ROM. Nimbus identifies it and refuses the wrong one.
-upscale lane GameCube GBA PSP PS2 merged: host, package, distribution, online fleet, records, backups
-Outlined cards are the key systems. Arrows show build or data flow down a lane. Scroll sideways on a phone.
-What is ours, what is the game's, what is yours
+```text
+01  SOURCE          Matching disc image or ROM
+                         ↓
+02  INTAKE          Identify the executable and map code and data
+                         ↓
+03  RECOMPILE       Translate game code ahead of time and connect it
+                    to the console's native runtime and services
+                         ↓
+04  BUILD & VERIFY  Check required features through the real launcher
+                    before final profiling and optimization
+                         ↓
+05  NATIVE CORES    14 game cores across four console families
+                         ↓
+06  NIMBUS HOST     Four console hosts → one shared Vulkan renderer
+                    Launcher, input, audio, saves, and netplay
+                         ↓
+07  PACKAGE & SIGN  Freeze, check, and sign the release builds
+                         ↓
+08  DISTRIBUTE      Linux .run · Windows .zip · Android .apk
+                    Optional HD packs are separate downloads
+                         ↓
+09  ONLINE          Lobby and room codes → direct peer connection
+                    when possible, or one of 16 regional relays
+                         ↓
+10  PLAY            Link the matching disc image or ROM you own;
+                    play locally or cross-play across platforms
+```
 
-The reverse engineering community is right to ask this of any closed project. Here is the split, row by row.
+**Parallel texture path:** Decode game art → upscale by texture class → build and verify the optional pack tiers → distribute separately. The compressed packs for Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS load into graphics memory before play.
 
-We don't pretend to be the hardware
-Part of the map	Where it comes from	Status
-Renderer and graphics front ends (row 06)	Written by us from public hardware documentation and our own captures. Any open-source code it uses is permissively licensed and listed in the notices.	original
-Hosts, runtimes, system services (rows 03, 06)	Written by us. They answer what a game asks for; they do not reproduce a console's firmware. No game code is interpreted at run time, and there is no emulation fallback path.	original
-Launcher, netplay, online (rows 06, 09)	Written by us.	original
-Game cores (row 05)	One core per game, written to run natively. A core does nothing alone: it runs only with the matching legally acquired disc image or ROM, which the player supplies from a copy they own. Without that, Nimbus is an empty shell.	runs only with your legally acquired disc
-Game data: models, sound, stages, movies	Read from the legally acquired disc image or ROM you link. Nimbus checks that it is the right disc and refuses any other.	you supply
-Supporting libraries	Permissively licensed open source. Notices ship inside every download.	open source
-Why the pace is possible
-
-Look at the timeline against the map. October went into rows 03 to 06 for one console: the runtime, the host, the renderer, and the proof that the result matched the original. That was the foundation.
-
-After that, a game on a console we already support only needs rows 01 to 05 in its own lane. Everything from row 06 down is already there. A new console family adds one lane, then merges into the same host row.
-
-The same shape is why a mistake in a merged row reaches every game at once. Changes there are proven against all fourteen before a release.
-It runs like an assembly line
-
-The map is also how the work is organized. Each row is a station, and the stations run at the same time.
-
-    Lanes in parallel. While one lane brings up a game's core, others work on graphics, netplay, packaging and textures, each on its own machine. A game is rarely waiting on one desk.
-    Written hand-offs. Every lane records what it did and what it leaves for the next, so work carries on around the clock.
-    Tools are kept. Anything done by hand for one game becomes a tool for the next. The second PS2 game cost a fraction of the first.
-    A check at every station. Nothing moves down the line until the station before it has shown its result.
-
-None of that replaces attention. Every game has a person who set its bar, who plays each build on real hardware, and who decides whether it ships. The hours are long because these are games we grew up with and want to see run well.
-What changed on the map since 2.0
-
-    Three more cores: Budokai Tenkaichi 3 and Ultimate Ninja 5 in the PS2 lane, Gundam vs. Gundam NEXT PLUS in the PSP lane.
-    Upscale lane: packs for the two newest games are compressed for the graphics chip and loaded whole before play.
-    Row 06: shader sets for every console family are prepared in one pass at first open.
-    Row 06: local two-player support in every host.
-    Row 07: the GameCube and GBA hosts are now built from the same frozen tree as the others.
-
-Next: Alpha 2.3 is a foundations release, with no new game.
-Nimbus Alpha 2.2 · Last updated 17 Nov 2026. Game names identify compatible titles. Nimbus ships no disc images or ROMs: models, textures, audio and movies are read from your own legally acquired disc or ROM. Game code runs as native cores, recompiled from each game's own code. The packages also carry small start states and provided saves, made by running the games. All trademarks belong to their owners. 
+See the [full architecture notes](https://nimbusrecomp.org/architecture-notes) for the console-by-console map and release timeline.
 
 Contact: TheNimbusProject@yahoo.com
 
