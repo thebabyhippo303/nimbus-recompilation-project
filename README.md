@@ -81,8 +81,8 @@ Read top to bottom. GameCube, Game Boy Advance, PSP, and PlayStation 2 each have
                          ↓
 07  PACKAGE & SIGN  Freeze, check, and sign the release builds
                          ↓
-08  DISTRIBUTE      Linux .run · Windows .zip · Android .apk
-                    Optional HD packs are separate downloads
+08  RELEASE DOWNLOADS  Linux .run · Windows .zip · Android .apk
+                       Optional HD packs are separate downloads
                          ↓
 09  ONLINE          Lobby and room codes → direct peer connection
                     when possible, or one of 16 regional relays
@@ -91,7 +91,7 @@ Read top to bottom. GameCube, Game Boy Advance, PSP, and PlayStation 2 each have
                     play locally or cross-play across platforms
 ```
 
-**Parallel texture path:** Decode game art → upscale by texture class → build and verify the optional pack tiers → distribute separately. The compressed packs for Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS load into graphics memory before play.
+**Parallel texture path:** Decode game art → upscale by texture class → build and verify the optional pack tiers → offer as separate downloads. The compressed packs for Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS load into graphics memory before play.
 
 See the [full architecture notes](https://nimbusrecomp.org/architecture-notes) for the console-by-console map and release timeline.
 
