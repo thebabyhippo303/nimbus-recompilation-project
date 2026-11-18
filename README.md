@@ -84,8 +84,9 @@ Read top to bottom. GameCube, Game Boy Advance, PSP, and PlayStation 2 each have
 08  RELEASE DOWNLOADS  Linux .run · Windows .zip · Android .apk
                        Optional HD packs are separate downloads
                          ↓
-09  ONLINE          Lobby and room codes → direct peer connection
-                    when possible, or one of 16 regional relays
+09  ONLINE          Crossplay on Linux, Windows and Android.
+                    Parties, room codes, Quick Match; up to 8 players.
+                    Play on regional servers.
                          ↓
 10  PLAY            Link the matching disc image or ROM you own;
                     play locally or cross-play across platforms
