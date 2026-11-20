@@ -8,17 +8,35 @@ Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), S
 
 This repository holds the finished release distros only. Grab them from [Releases](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases).
 
-## Current version: Alpha 2.2.1 (Nov 17, 2026) — hotfix for Linux and Windows; Android remains on the Alpha 2.2 build.
+## Current version: Alpha 2.2.1 (Nov 20, 2026) — Linux, Windows and Android.
 
 | Platform | File | SHA-256 |
 |---|---|---|
 | Linux x86_64 (Ubuntu 26.04, Vulkan GPU) | [`Nimbus-Alpha-2.2-Linux-x86_64.run`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.2/Nimbus-Alpha-2.2-Linux-x86_64.run) | `a2b96ccd6a46af348fc68705cc04be6b27b88af2ca3752b96724327c41266f35` |
 | Windows x64 (Windows 11, Vulkan GPU) | [`Nimbus-Alpha-2.2-Windows-x64.zip`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.2/Nimbus-Alpha-2.2-Windows-x64.zip) | `80058e6508d5fa1e560ca9d02d65adf3da3602e2ac8a784a9da04c9d0a63b6e8` |
-| Android arm64 (Android 13+, Vulkan GPU) | [`Nimbus-Alpha-2.2-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.2/Nimbus-Alpha-2.2-Android-arm64.apk) | `465bf498cdc8ddc4e96d5613e2cf85c33babf70baeec224bc0fb9d4ecb32cead` |
+| Android arm64 (Android 13+, Vulkan GPU) | [`Nimbus-Alpha-2.2.1-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.2.1/Nimbus-Alpha-2.2.1-Android-arm64.apk) | `db667b20d0b41c796f8612aeb0a0c83e417b82b40446e8273ad5edbe15ea23f3` |
 
-Also mirrored on the CDN: [R2 builds/alpha-2.2](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2/).
+Also mirrored on the CDN: [R2 builds/alpha-2.2.1](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2.1/) (Linux and Windows) and [Android 2.2.1](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2.1/android/Nimbus-Alpha-2.2.1-Android-arm64.apk). Prior 2.2 files remain at [R2 builds/alpha-2.2](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2/).
 
-Check your download against `SHA256SUMS` (`sha256sum -c SHA256SUMS`). Release notes: [Alpha 2.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2). Trailer: [Alpha 2.2 trailer](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/video/alpha-2.2/TNRP-Alpha-2.2-Trailer-web.mp4). HD texture packs (including the new compressed packs for Ultimate Ninja 5 and Gundam vs. Gundam, plus packs for Budokai Tenkaichi 3, Ridge Racer 2, Super Dragon Ball Z, Infinite World and earlier games) are on the [website](https://nimbusrecomp.org/#downloads).
+Check your download against `SHA256SUMS` (`sha256sum -c SHA256SUMS`). Release notes: [Alpha 2.2.1](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2.1) (current, including the Android hotfix) and [Alpha 2.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2). Trailer: [Alpha 2.2 trailer](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/video/alpha-2.2/TNRP-Alpha-2.2-Trailer-web.mp4). HD texture packs (including the new compressed packs for Ultimate Ninja 5 and Gundam vs. Gundam, plus packs for Budokai Tenkaichi 3, Ridge Racer 2, Super Dragon Ball Z, Infinite World and earlier games) are on the [website](https://nimbusrecomp.org/#downloads).
+
+# Nimbus Alpha 2.2.1 for Android
+
+A hotfix for Android. Linux and Windows are already on 2.2.1 and are unchanged.
+
+## Fixed
+
+- **Black screen, then back to the Library, when starting any game on some Android devices.** On these devices every game failed to start graphics. Games now start.
+- If a device's graphics driver still cannot run Nimbus, the Library now says so and names the graphics device, where before it gave no message.
+
+## Good to know
+
+- After updating, Nimbus prepares its shaders once more. This takes a short while on the first start and does not happen again.
+- Online play is unchanged: 2.2.1 on Android plays with 2.2 and 2.2.1 on every platform.
+
+## Updating
+
+Install the 2.2.1 APK over 2.2. It updates in place and keeps your links and saves. Do not uninstall first.
 
 **New in 2.2:** Naruto Shippuden: Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS join as games thirteen and fourteen — the first Naruto and Gundam titles — with a new compressed HD pack standard, shaders prepared once for every game, and local 2-player in every game.
 
