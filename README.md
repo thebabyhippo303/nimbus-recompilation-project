@@ -27,6 +27,7 @@ A second hotfix for Android. Linux and Windows stay on 2.2.1.
 ## Fixed
 
 - **Phones that still showed "Nimbus could not start graphics" on 2.2.1** (for example some Helio G99 phones on Android 14) now start their games. On these phones Nimbus uses a second graphics path.
+- Heads up: the second graphics path is slower than Vulkan, so games on those phones may run slower. Every other device stays on Vulkan.
 - Every other device runs exactly as on 2.2.1.
 
 ## Good to know
