@@ -38,6 +38,8 @@ A hotfix for Android. Linux and Windows are already on 2.2.1 and are unchanged.
 
 Install the 2.2.1 APK over 2.2. It updates in place and keeps your links and saves. Do not uninstall first.
 
+Thanks to Velkooky on Reddit for finding and reporting this bug.
+
 **New in 2.2:** Naruto Shippuden: Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS join as games thirteen and fourteen — the first Naruto and Gundam titles — with a new compressed HD pack standard, shaders prepared once for every game, and local 2-player in every game.
 
 **Known issue:** Budokai Tenkaichi 3 shows a black screen on Pixel-class phones (Mali graphics, for example the Pixel 9a); a fix is planned for 2.3.
