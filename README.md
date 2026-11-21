@@ -60,6 +60,34 @@ Four of the world-first ports, **Ultimate Ninja 5**, **Gundam vs. Gundam NEXT PL
 
 > **Legal notice:** TNRP ships only the native runtime. It includes no copyrighted game assets, ROMs or BIOS files. You need to supply your own legally dumped discs or ROMs.
 
+## Why the Code Stays Closed
+
+The retro gaming scene has a pretty bad habit of acting entitled to free labor. Nobody owes the internet their source code, especially when the project is completely free, takes zero donations, and runs on servers paid for out of our own pocket.
+
+The moment someone drops clean, working code for desktop and mobile into a public repo, parasitic outfits start circling. DamonPS2 famously took the open source PCSX2 code, closed it off in violation of the GPL, and stacked ads and microtransactions on top of it. Egg NS pulled the exact same move with code from Yuzu and Skyline, locking other people's work behind a specific controller purchase and a monthly VIP subscription. When someone builds a unified runtime for multiple consoles and a custom porting kit from scratch, tossing the keys onto GitHub before it even leaves alpha is basically begging for a dozen sketchy Play Store clones to strip our name off it by next Tuesday.
+
+### Engineering vs. "Vibe Coded Slop"
+
+There is also a massive difference between systems engineering assisted by AI and the "vibe coded" slop flooding the scene right now. Slop ports grab an existing emulator or a sluggish translation shim, prompt an LLM until a title screen boots, lay touch controls over it, and upload a broken build that stutters, blows out RAM, and runs worse than standard emulation.
+
+You cannot vibe code a unified Vulkan renderer whose shaders are precompiled once, offline BC7 and ASTC texture compression pipelines with full mip chains, and a single shared host spanning four distinct console architectures with crossplay. And you definitely cannot vibe code your way into outperforming mature emulators and established native C++ ports on real hardware. That takes actual profiling, systems architecture, targeted hotfixes, and disciplined refactors.
+
+### Why We Won't Hand Out a Port Factory
+
+Open sourcing a working porting kit that spans multiple consoles is nothing like open sourcing the decompilation of a single game. In the age of autonomous AI coding agents, dropping those keys onto GitHub hands out a port factory that works at the push of a button.
+
+Within weeks, GitHub, Reddit, and sketchy APK sites would be flooded with tens of thousands of automated, half baked ports. These would be builds someone checked for ten seconds on a title screen before slapping "NATIVE 4K 60FPS RECOMP" in the title, only for them to crash on level two, corrupt saves, or break audio. Players would have no way to tell real, playtested work apart from automated dumps made in fifteen minutes, which would poison trust in the entire static recompilation movement and drive people right back to standard emulators.
+
+Worse, bad actors would immediately use that same toolkit to mass produce standalone APKs with pirated ROMs and ISOs baked inside, monetized with ads and paywalls. That would paint a massive legal target straight onto the upstream toolchain that keeps everything here free and legally clean under a strict bring your own ROM model.
+
+### Speed, Focus, and Ownership
+
+Staying closed early on also has a massive practical upside: speed and focus. Look at Cemu, which stayed completely closed source for nearly eight years. People threw endless conspiracy theories and accusations at the developers, demanding they open the code to "prove" they weren't using stolen material. Meanwhile, because they never had to babysit pull requests, bikeshedding, or copycat forks while the architecture was still taking shape, Cemu ran circles around the open source alternatives and only opened its code under MPL 2.0 once the project had fully matured.
+
+If a project is built cleanly on original code and permissive dependencies, keeping it closed, or choosing a source available license over permissive open source, is entirely the developer's call. Keeping the runtime and porting kit locked down right now isn't only about protecting our work from thieves. It is the quality gate and the legal firewall that keep the scene from drowning in automated garbage.
+
+At the end of the day, players who just want to boot up Budokai Tenkaichi 3 or Ultimate Ninja 5 with crossplay care about whether the build runs fast and works, not whether critics on Reddit get to read the C++ files.
+
 ## Current version: Alpha 2.2.2 (Nov 20, 2026) — Android hotfix; Linux and Windows stay on Alpha 2.2.1.
 
 | Platform | File | SHA-256 |
