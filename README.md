@@ -8,6 +8,58 @@ Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), S
 
 This repository holds the finished release distros only. Grab them from [Releases](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases).
 
+## World-First Native Ports
+
+The Nimbus Recompilation Project (TNRP) brings **15 games from 4 consoles** into a single native launcher. **13 of those 15 games had never been natively ported to modern hardware before TNRP.** Of the other two, one is the first port of its original console release, and the other is a game other projects have also worked on. TNRP lifted it from the disc on its own.
+
+Every game runs natively on **Linux (x86-64)**, **Windows (x64)** and **Android (arm64)**, with crossplay between all three and no emulator underneath.
+
+### At a glance
+
+| | Count | Games |
+|---|---|---|
+| World-first native ports | 13 | Budokai 2, Sagas, Supersonic Warriors, Taiketsu, Tenkaichi Tag Team, Shin Budokai, Shin Budokai – Another Road, Infinite World, Super Dragon Ball Z, Ridge Racer 2, Naruto Shippuden: Ultimate Ninja 5, Gundam vs. Gundam NEXT PLUS, Bleach: Heat the Soul 7 |
+| First port of the original GameCube release | 1 | Dragon Ball Z: Budokai (GameCube) |
+| Other projects exist, but TNRP lifted its own port from the disc, with 3-platform crossplay | 1 | Dragon Ball Z: Budokai Tenkaichi 3 |
+
+### By console
+
+#### PlayStation Portable: 6 of 6 are world firsts
+- **Bleach: Heat the Soul 7** (JP, coming in Alpha 2.3): Eighting's last PSP Bleach fighter, with its 80+ fighters and 4-player battles moving from local Ad-Hoc to online crossplay.
+- **Mobile Suit Gundam: Gundam vs. Gundam NEXT PLUS** (JP): the Japan-only arena fighter, with English text options, HD textures and 4-player (2v2) online crossplay.
+- **Ridge Racer 2** (EU/JP): the PSP racer that never came to North America, with its local Wireless Battle grown into 2 to 8 player online races, plus HD texture and movie packs.
+- **Dragon Ball Z: Tenkaichi Tag Team** (NA): 2v2 tag battles playable online with up to 4 players across PC and handhelds.
+- **Dragon Ball Z: Shin Budokai** (NA): Dimps's PSP fighter with online versus on every platform.
+- **Dragon Ball Z: Shin Budokai – Another Road** (NA): the Future Trunks story intact, with Ad-Hoc versus upgraded to online crossplay.
+
+#### PlayStation 2: 3 of 4 are world firsts
+- **Naruto Shippuden: Ultimate Ninja 5** (EU/JP): the last PS2 Ultimate Ninja, never released in North America, with HD textures included.
+- **Dragon Ball Z: Infinite World** (NA): the final game on the Budokai engine, free of the frame-rate slowdowns it suffers under emulation.
+- **Super Dragon Ball Z** (NA): Crafts & Meister's arcade-style fighter with online crossplay.
+- **Dragon Ball Z: Budokai Tenkaichi 3** (NA): other community decompilation and port projects exist, but TNRP doesn't use any of them. We lifted it straight from the original disc ourselves. What sets TNRP apart:
+  - One build of the game runs natively on Linux, Windows and Android, with crossplay between all three.
+  - Built-in online play with friends, parties and voice chat, with no Parsec, plug-ins or emulator netplay setup.
+  - Shaders are precompiled ahead of time, so there's no stutter while they compile mid-match.
+  - It lives in the same launcher as the other 14 games, sharing one friends list and party system.
+
+#### GameCube: 2 world firsts plus 1 GameCube first
+- **Dragon Ball Z: Budokai 2** (NA): the first native port on any platform, with online versus and HD texture packs.
+- **Dragon Ball Z: Sagas** (NA): the 3D action-adventure, with local and online 2-player co-op, HD textures and upscaled cutscenes.
+- **Dragon Ball Z: Budokai** (NA): the first native port of the original GameCube release. An Xbox 360 HD Collection recompilation came out for Windows in 2026. What sets TNRP apart:
+  - It ports the original GameCube version, not the HD Collection remaster.
+  - It runs natively on Linux and Android as well as Windows, not on Windows alone.
+  - It has online versus with crossplay across all three platforms, through the same friends and party system as every other TNRP game.
+
+#### Game Boy Advance: 2 of 2 are world firsts
+- **Dragon Ball Z: Supersonic Warriors** (NA): local 2-player and online crossplay inside the launcher.
+- **Dragon Ball Z: Taiketsu** (NA): multiplayer across every platform.
+
+### Games that never came to North America
+
+Four of the world-first ports, **Ultimate Ninja 5**, **Gundam vs. Gundam NEXT PLUS**, **Ridge Racer 2** and **Bleach: Heat the Soul 7**, never had an official North American release. TNRP makes these imports playable natively on PC and Android handhelds, with modern controls, HD texture packs, English text where needed and online play through servers in 16 cities worldwide.
+
+> **Legal notice:** TNRP ships only the native runtime. It includes no copyrighted game assets, ROMs or BIOS files. You need to supply your own legally dumped discs or ROMs.
+
 ## Current version: Alpha 2.2.2 (Nov 20, 2026) — Android hotfix; Linux and Windows stay on Alpha 2.2.1.
 
 | Platform | File | SHA-256 |
