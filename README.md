@@ -8,6 +8,10 @@ Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), S
 
 This repository holds the finished release distros only. Grab them from [Releases](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases).
 
+## Coming soon
+
+**Yu Yu Hakusho Forever** (Japan, PlayStation 2, SLPS-25499) is game 16. It is not in a released build yet. Dragon Ball remains the heart of TNRP.
+
 ## World-First Native Ports
 
 The Nimbus Recompilation Project (TNRP) brings **15 games from 4 consoles** into a single native launcher. **13 of those 15 games had never been natively ported to modern hardware before TNRP.** Of the other two, one is the first port of its original console release, and the other is a game other projects have also worked on. TNRP lifted it from the disc on its own.
