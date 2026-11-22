@@ -107,7 +107,7 @@ Nimbus Alpha 2.3
 Dragon Ball remains the heart of TNRP. This release also adds a new native port that Charles made himself.
 
 NEW GAME
-Bleach: Heat the Soul 7 joins Nimbus as its fifteenth game on Linux, Windows and Android. Link your own disc image. A provided Everything Unlocked save makes the full roster selectable.
+Bleach: Heat the Soul 7 joins Nimbus as its fifteenth game on Linux, Windows and Android. Link your own disc image.
 Play online with up to four players. Two player Quick Match opens at the Soul VS opponent list. The disc's menus remain in Traditional Chinese, with English mode names.
 Bleach's HD texture packs load before play. Find My Files recognizes Bleach and Gundam HD packs by game ID rather than filename, and rejects packs meant for the wrong platform.
 
@@ -171,7 +171,7 @@ You need your own NTSC-U discs, your own Supersonic Warriors (USA) and Taiketsu 
 - **A new HD texture pack standard**, starting with the two new games: BC7 on PC, ASTC on Android, every detail level made offline, and the whole linked pack loaded into graphics memory before play starts — nothing loads or builds while you play, at about four times less video memory than uncompressed textures. The other twelve games keep their existing packs in 2.2.
 - **Shaders are prepared once, for every game.** The one-time "Preparing shaders" pass after an install or update now covers every game that has a shader set; Budokai Tenkaichi 3, Ultimate Ninja 5 and Gundam vs. Gundam no longer compile their own shaders at their first start.
 - **Local 2 players in every game** — even games that didn't ship with it in their original release. PSP fighters and Ridge Racer 2 open two linked consoles, each with its own picture; PS2 games read the second pad; GBA games show both consoles side by side.
-- **Saves:** a new in-game setting for every game — My save or Everything unlocked (the provided save, on its own copy). Ridge Racer 2 boots on your own save, Sagas has a provided save, and Android GameCube games each have their own memory card.
+- **Saves:** your own save is kept by Nimbus and is the default for every game. Ridge Racer 2 boots on your own save, and Android GameCube games each have their own memory card.
 - **Fast-forward** now works in the PS2 games, and from a controller (hold Back + RB, rebindable) and a touch button in every game.
 - **Online fixes:** Tenkaichi Tag Team's false "Connection was lost" is fixed (both players update to 2.2), and Ridge Racer 2 rooms work on a fresh install again.
 - **Early in this build** (to be finished in 2.3): player save states in PSP and PS2 games (off in multiplayer), and Android pause and resume when you switch apps.
