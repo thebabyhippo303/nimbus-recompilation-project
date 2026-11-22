@@ -112,7 +112,7 @@ Play online with up to four players. Two player Quick Match opens at the Soul VS
 Bleach's HD texture packs load before play. Find My Files recognizes Bleach and Gundam HD packs by game ID rather than filename, and rejects packs meant for the wrong platform.
 
 LIBRARY AND ONLINE
-All 15 original covers now fill their Library cards, grouped by console, with READY/LINK and HD badges.
+All 15 games now appear as trading card style cards in the Library, grouped by console, with READY/LINK and HD badges.
 A new party, or a party with only its idle leader in it, follows the last game the leader opened in the Library. Moving the highlight alone does not change the party's game.
 Fixed a black Waiting for Players window that could appear on Windows after switching games.
 Online play uses your chosen player name, or "Player" when no name is set. It no longer falls back to your computer account name.
