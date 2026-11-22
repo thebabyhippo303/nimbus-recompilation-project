@@ -2,7 +2,7 @@
 
 **TNRP** (The Nimbus Recompilation Project, formerly The Nimbus Project) is a free fan project by Animorph Allocations.
 
-Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), Supersonic Warriors and Taiketsu (USA Game Boy Advance), Tenkaichi Tag Team, Shin Budokai and Shin Budokai – Another Road (USA PSP), Infinite World (USA PlayStation 2, SLUS-21842), Super Dragon Ball Z (USA PlayStation 2, SLUS-21442), Budokai Tenkaichi 3 (USA PlayStation 2, SLUS-21678), Ridge Racer 2 (Europe PlayStation Portable, UCES-00422), Naruto Shippuden: Ultimate Ninja 5 (Europe PlayStation 2, SLES-55605), and Mobile Suit Gundam: Gundam vs. Gundam NEXT PLUS (Japan PlayStation Portable, NPJH-50107) — fourteen games in one launcher on Linux, Windows and Android (four consoles: GameCube, GBA, PSP and PS2), with online play and full 3-platform crossplay on regional servers. Ridge Racer 2 went online in 2.1, with 2–8 player crossplay racing through Wireless Battle.
+Native ports of Dragon Ball Z: Budokai, Budokai 2 and Sagas (NTSC-U GameCube), Supersonic Warriors and Taiketsu (USA Game Boy Advance), Tenkaichi Tag Team, Shin Budokai and Shin Budokai – Another Road (USA PSP), Infinite World (USA PlayStation 2, SLUS-21842), Super Dragon Ball Z (USA PlayStation 2, SLUS-21442), Budokai Tenkaichi 3 (USA PlayStation 2, SLUS-21678), Ridge Racer 2 (Europe PlayStation Portable, UCES-00422), Naruto Shippuden: Ultimate Ninja 5 (Europe PlayStation 2, SLES-55605), Mobile Suit Gundam: Gundam vs. Gundam NEXT PLUS (Japan PlayStation Portable, NPJH-50107), and Bleach: Heat the Soul 7 (Asia PlayStation Portable, NPHG00087). Fifteen native ports on Linux, Windows and Android (four consoles: GameCube, GBA, PSP and PS2), with online play and crossplay across all three platforms on regional servers. Dragon Ball remains the heart of TNRP. Ridge Racer 2 went online in 2.1, with 2 to 8 player crossplay racing through Wireless Battle.
 
 **Official website:** [nimbusrecomp.org](https://nimbusrecomp.org/)
 
@@ -25,7 +25,7 @@ Every game runs natively on **Linux (x86-64)**, **Windows (x64)** and **Android 
 ### By console
 
 #### PlayStation Portable: 6 of 6 are world firsts
-- **Bleach: Heat the Soul 7** (JP, coming in Alpha 2.3): Eighting's last PSP Bleach fighter, with its 80+ fighters and 4-player battles moving from local Ad-Hoc to online crossplay.
+- **Bleach: Heat the Soul 7** (Asia, new in Alpha 2.3): Eighting's last PSP Bleach fighter, with its 80+ fighters and 4-player battles moving from local Ad-Hoc to online crossplay.
 - **Mobile Suit Gundam: Gundam vs. Gundam NEXT PLUS** (JP): the Japan-only arena fighter, with English text options, HD textures and 4-player (2v2) online crossplay.
 - **Ridge Racer 2** (EU/JP): the PSP racer that never came to North America, with its local Wireless Battle grown into 2 to 8 player online races, plus HD texture and movie packs.
 - **Dragon Ball Z: Tenkaichi Tag Team** (NA): 2v2 tag battles playable online with up to 4 players across PC and handhelds.
@@ -88,19 +88,47 @@ If a project is built cleanly on original code and permissive dependencies, keep
 
 At the end of the day, players who just want to boot up Budokai Tenkaichi 3 or Ultimate Ninja 5 with crossplay care about whether the build runs fast and works, not whether critics on Reddit get to read the C++ files.
 
-## Current version: Alpha 2.2.2 (Nov 20, 2026) — Android hotfix; Linux and Windows stay on Alpha 2.2.1.
+## Current version: Alpha 2.3 (22 Nov 2026)
 
-| Platform | File | SHA-256 |
+| Platform | File | SHA256 |
 |---|---|---|
-| Linux x86_64 (Ubuntu 26.04, Vulkan GPU) | [`Nimbus-Alpha-2.2-Linux-x86_64.run`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.2/Nimbus-Alpha-2.2-Linux-x86_64.run) | `a2b96ccd6a46af348fc68705cc04be6b27b88af2ca3752b96724327c41266f35` |
-| Windows x64 (Windows 11, Vulkan GPU) | [`Nimbus-Alpha-2.2-Windows-x64.zip`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.2/Nimbus-Alpha-2.2-Windows-x64.zip) | `80058e6508d5fa1e560ca9d02d65adf3da3602e2ac8a784a9da04c9d0a63b6e8` |
-| Android arm64 (Android 13+, Vulkan GPU) | [`Nimbus-Alpha-2.2.2-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.2.2/Nimbus-Alpha-2.2.2-Android-arm64.apk) | `5507ffd0f88e7e86367a61621f38b0482dbfcbd45de9d621b1b5d66f5087aa60` |
+| Linux x86_64 (Ubuntu 26.04, Vulkan GPU) | [`Nimbus-Alpha-2.3-Linux-x86_64.run`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.3/Nimbus-Alpha-2.3-Linux-x86_64.run) | `ad962ce3b46a852036987a724a5f8eb1a41dfb56ebed37a44c397c093869d352` |
+| Windows x64 (Windows 11, Vulkan GPU) | [`Nimbus-Alpha-2.3-Windows-x64.zip`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.3/Nimbus-Alpha-2.3-Windows-x64.zip) | `370ba19211863eb8ccc3d25c0cc95e9aaf2c4f52450aca02887664564a15a13f` |
+| Android arm64 (Android 13+, Vulkan GPU) | [`Nimbus-Alpha-2.3-Android-arm64.apk`](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/download/alpha-2.3/Nimbus-Alpha-2.3-Android-arm64.apk) | `d2122ff208fc5839687199ccf1fcb4078dbfd10891f67c3019fe24539ed75a6d` |
 
-Also mirrored on the CDN: [R2 builds/alpha-2.2.1](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2.1/) (Linux and Windows) and [Android 2.2.2](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2.2/android/Nimbus-Alpha-2.2.2-Android-arm64.apk). Prior Android 2.2.1 and 2.2 files remain at [R2 builds/alpha-2.2.1/android](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2.1/android/Nimbus-Alpha-2.2.1-Android-arm64.apk) and [R2 builds/alpha-2.2](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2/).
+Also mirrored on the CDN: [R2 builds/alpha-2.3](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.3/). Older Alpha 2.2.x builds remain at [R2 builds/alpha-2.2.1](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2.1/) (Linux and Windows), [Android 2.2.2](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2.2/android/Nimbus-Alpha-2.2.2-Android-arm64.apk), and [R2 builds/alpha-2.2](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/builds/alpha-2.2/).
 
-Check your download against `SHA256SUMS` (`sha256sum -c SHA256SUMS`). Release notes: [Alpha 2.2.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2.2) (current Android hotfix), [Alpha 2.2.1](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2.1) (Linux, Windows, and the first Android hotfix), and [Alpha 2.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2). Trailer: [Alpha 2.2 trailer](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/video/alpha-2.2/TNRP-Alpha-2.2-Trailer-web.mp4). HD texture packs (including the new compressed packs for Ultimate Ninja 5 and Gundam vs. Gundam, plus packs for Budokai Tenkaichi 3, Ridge Racer 2, Super Dragon Ball Z, Infinite World and earlier games) are on the [website](https://nimbusrecomp.org/#downloads).
+Check your download against `SHA256SUMS` (`sha256sum -c SHA256SUMS`). Release notes: [Alpha 2.3](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.3) (current), with earlier notes at [Alpha 2.2.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2.2), [Alpha 2.2.1](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2.1), and [Alpha 2.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.2). Trailer: [Alpha 2.3 trailer](https://pub-c43e1e02f5fe49a39b0aae898e74e6ce.r2.dev/video/alpha-2.3/TNRP-Alpha-2.3-Trailer.mp4). HD texture packs, including the new packs for Bleach: Heat the Soul 7, are on the [website](https://nimbusrecomp.org/#alpha-2-3).
 
-# Nimbus Alpha 2.2.2 for Android
+# Nimbus Alpha 2.3
+
+Nimbus Alpha 2.3
+
+Dragon Ball remains the heart of TNRP. This release also adds a new native port that Charles made himself.
+
+NEW GAME
+Bleach: Heat the Soul 7 joins Nimbus as its fifteenth game on Linux, Windows and Android. Link your own disc image. A provided Everything Unlocked save makes the full roster selectable.
+Play online with up to four players. Two player Quick Match opens at the Soul VS opponent list. The disc's menus remain in Traditional Chinese, with English mode names.
+Bleach's HD texture packs load before play. Find My Files recognizes Bleach and Gundam HD packs by game ID rather than filename, and rejects packs meant for the wrong platform.
+
+LIBRARY AND ONLINE
+All 15 original covers now fill their Library cards, grouped by console, with READY/LINK and HD badges.
+A new party, or a party with only its idle leader in it, follows the last game the leader opened in the Library. Moving the highlight alone does not change the party's game.
+Fixed a black Waiting for Players window that could appear on Windows after switching games.
+Online play uses your chosen player name, or "Player" when no name is set. It no longer falls back to your computer account name.
+Tag Team, Gundam vs. Gundam NEXT PLUS and Bleach now take two and four player parties directly to the appropriate lobby or room.
+Gundam vs. Gundam NEXT PLUS online battles now start correctly.
+
+INCLUDES THE 2.2.1 AND 2.2.2 FIXES
+Gundam's movies no longer stop the game on Linux or Windows.
+Android still runs on Vulkan. If a device cannot start that way, it can still start, though it may run slower.
+
+KNOWN ISSUES
+Tag Team between two handhelds (seen on the RP5 and the RG Slide) can drop the connection during a fight. This was also present in 2.2.2. A fix is planned for 2.4.
+Budokai Tenkaichi 3 can show a black screen on Pixel class phones.
+Older HD packs and movies keep their existing formats and loading behavior where those exceptions were already approved.
+
+# Nimbus Alpha 2.2.2 for Android (previous release)
 
 A second hotfix for Android. Linux and Windows stay on 2.2.1.
 
@@ -128,13 +156,13 @@ Thanks to Velkooky on Reddit for finding and reporting this bug.
 
 **New in 2.2:** Naruto Shippuden: Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS join as games thirteen and fourteen — the first Naruto and Gundam titles — with a new compressed HD pack standard, shaders prepared once for every game, and local 2-player in every game.
 
-**Known issue:** Budokai Tenkaichi 3 shows a black screen on Pixel-class phones (Mali graphics, for example the Pixel 9a); a fix is planned for 2.3.
+**Known issue:** Budokai Tenkaichi 3 shows a black screen on Pixel-class phones (Mali graphics, for example the Pixel 9a); this is still present in 2.3; a fix is planned.
 
 **Tip:** for now, launch a game in single player a time or two before jumping into multiplayer.
 
 Previous releases: [Alpha 2.1](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.1) (Nov 14, 2026) · [Alpha 2.0](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-2.0) (Nov 11, 2026) · [Alpha 1.9](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.9) (Nov 9, 2026) · [Alpha 1.8](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.8) (Nov 8, 2026) · [Alpha 1.7](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.7) (Nov 7, 2026) · [Alpha 1.6](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.6) (Nov 6, 2026) · [Alpha 1.5](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.5) (Nov 5, 2026) · [Alpha 1.4](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.4) (Nov 3, 2026) · [Alpha 1.3](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.3) (Nov 2, 2026) · [Alpha 1.2](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.2) (Nov 2, 2026) · [Alpha 1.1](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.1) (Nov 2, 2026) · [Alpha 1.0](https://github.com/thebabyhippo303/nimbus-recompilation-project/releases/tag/alpha-1.0) (Nov 1, 2026).
 
-You need your own NTSC-U discs, your own Supersonic Warriors (USA) and Taiketsu (USA) ROMs, your own Tenkaichi Tag Team (USA, ULUS10537), Shin Budokai (USA, ULUS10081) and Shin Budokai – Another Road (USA, ULUS10234) ISO, CSO or ZSO, your own Infinite World (USA, SLUS-21842) disc image, your own Super Dragon Ball Z (USA, SLUS-21442) disc image, your own Budokai Tenkaichi 3 (USA, SLUS-21678) disc image, your own Ridge Racer 2 (Europe, UCES-00422) ISO, CSO or ZSO, your own Ultimate Ninja 5 (Europe, SLES-55605) disc image, and your own Gundam vs. Gundam NEXT PLUS (Japan, NPJH-50107) ISO, CSO or ZSO. The runtime components for all fourteen games are bundled; no original disc images, ROMs or ISOs are included.
+You need your own NTSC-U discs, your own Supersonic Warriors (USA) and Taiketsu (USA) ROMs, your own Tenkaichi Tag Team (USA, ULUS10537), Shin Budokai (USA, ULUS10081) and Shin Budokai – Another Road (USA, ULUS10234) ISO, CSO or ZSO, your own Infinite World (USA, SLUS-21842) disc image, your own Super Dragon Ball Z (USA, SLUS-21442) disc image, your own Budokai Tenkaichi 3 (USA, SLUS-21678) disc image, your own Ridge Racer 2 (Europe, UCES-00422) ISO, CSO or ZSO, your own Ultimate Ninja 5 (Europe, SLES-55605) disc image, and your own Gundam vs. Gundam NEXT PLUS (Japan, NPJH-50107) ISO, CSO or ZSO, and your own Bleach: Heat the Soul 7 (Asia, NPHG00087) ISO, CSO or ZSO. The runtime components for all fifteen games are bundled; no original disc images, ROMs or ISOs are included.
 
 ## What's new in Alpha 2.2
 
@@ -148,7 +176,7 @@ You need your own NTSC-U discs, your own Supersonic Warriors (USA) and Taiketsu 
 - **Online fixes:** Tenkaichi Tag Team's false "Connection was lost" is fixed (both players update to 2.2), and Ridge Racer 2 rooms work on a fresh install again.
 - **Early in this build** (to be finished in 2.3): player save states in PSP and PS2 games (off in multiplayer), and Android pause and resume when you switch apps.
 - All twelve games from Alpha 2.1 remain fully playable.
-- **Known issue:** Budokai Tenkaichi 3 shows a black screen on Pixel-class phones (Mali graphics, for example the Pixel 9a); a fix is planned for 2.3. Gundam vs. Gundam's English text covers the main menu and its help text in 2.2; submenus and notices are still in Japanese.
+- **Known issue:** Budokai Tenkaichi 3 shows a black screen on Pixel-class phones (Mali graphics, for example the Pixel 9a); this is still present in 2.3; a fix is planned. Gundam vs. Gundam's English text covers the main menu and its help text in 2.2; submenus and notices are still in Japanese.
 - **Next up (2.3):** HD movies for the two new games, new-standard packs for the other twelve games, the Budokai Tenkaichi 3 Pixel fix, and finished save states.
 
 Bring your own legally dumped games. No copyrighted game files are included.
@@ -180,7 +208,7 @@ Read top to bottom. GameCube, Game Boy Advance, PSP, and PlayStation 2 each have
 04  BUILD & VERIFY  Check required features through the real launcher
                     before final profiling and optimization
                          ↓
-05  NATIVE CORES    14 game cores across four console families
+05  NATIVE CORES    15 game cores across four console families
                          ↓
 06  NIMBUS HOST     Four console hosts → one shared Vulkan renderer
                     Launcher, input, audio, saves, and netplay
@@ -198,7 +226,7 @@ Read top to bottom. GameCube, Game Boy Advance, PSP, and PlayStation 2 each have
                     play locally or cross-play across platforms
 ```
 
-**Parallel texture path:** Decode game art → upscale by texture class → build and verify the optional pack tiers → offer as separate downloads. The compressed packs for Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS load into graphics memory before play.
+**Parallel texture path:** Decode game art → upscale by texture class → build and verify the optional pack tiers → offer as separate downloads. The compressed packs for Bleach: Heat the Soul 7, Ultimate Ninja 5 and Gundam vs. Gundam NEXT PLUS load into graphics memory before play.
 
 See the [full architecture notes](https://nimbusrecomp.org/architecture-notes) for the console-by-console map and release timeline.
 
