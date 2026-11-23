@@ -108,7 +108,7 @@ Check your download against `SHA256SUMS` (`sha256sum -c SHA256SUMS`). Release no
 
 Nimbus Alpha 2.3
 
-Dragon Ball remains the heart of TNRP. This release also adds a new native port that Charles made himself.
+Dragon Ball remains the heart of TNRP. This release also adds a new native port that TheBabyHippo303 made himself.
 
 NEW GAME
 Bleach: Heat the Soul 7 joins Nimbus as its fifteenth game on Linux, Windows and Android. Link your own disc image.
